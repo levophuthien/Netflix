@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="Style.css">
+    <script src="angular.min.js"></script>
+    <script src="angular-route.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top d-flex" style="padding: 0%;padding-left: 2%;">
+        <a class="navbar-brand p-2" href="index.html"><img src="Images/Netflix_Logo.png" alt=""
+                style="width: 70px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="#product"><ion-icon name="list-outline"></ion-icon> </a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="#"><ion-icon name="call-outline"></ion-icon></a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="#"><ion-icon name="help-outline"></ion-icon></a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </ul>
+        </div>
+        <form class="form-inline p-2">
+            <input class="form-control mr-sm-2 small" type="search" placeholder="Search" aria-label="Search"
+                style="background-color: black; font-size: 10px;">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="font-size: 10px;">Search</button>
+        </form>
+        <ul class="navbar-nav justify-content-center">
+            <li class="nav-item p-2">
+                <a class="nav-link" href="FormSignUp.html" style="font-size: 10px;">Sign Up!</a>
+            </li>
+            <li class="nav-item p-2">
+                <a class="nav-link" href="FormLogin.html" style="font-size: 10px;">Sign In!</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="banner">
+            <div class="imgbanner"><a href="">Angry Birds2</a><button class="btn-hd">Play</button></div>
+    </header>
+
+    <div class="than" style="width: 97%; margin-left: 2%;margin-right: 1%;">
+        <article class="col-sm-12" id="product">
+            <h2>Hot Movie</h2>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="card">
+                        <img src="Images/AAAABegyUtyJr5_JBQDpZ-lpowA3y4I2O6F2xBRySK1293MgMMbTcan3J5I1cBKCL2DSsBIdGoV8OW073c6vcRG6N4yHOb5I28S_OaKgRMrQzzGquXLY-mgFuDGaVq6gAKp9h8KA.jpg"
+                            alt="">
+                        <div class="in4"><a href="#">Bốt Hôn<br></a><a href="">Lãng Mạng</a><br><br> <button
+                                class="btn btn-primary btn-sm">Like</button> <button
+                                class="btn btn-primary btn-sm">Share</button></div>
+                        <div class="content"><button class="btn btn-dark btn-sm ">Play</button></div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <img src="Images/AAAABddE6LkYtzersX-8amYVYTBy9VfULhQEXmFchiKQZ8ir7oZFIOxmn_WrvAFduzV8yTbbJkKM2Kn0NtwirdF0sQiiFPz7dwtACggcHpvP2g4saE4DDdOq3xI3_6fdYMSiLapZ.jpg"
+                            alt="">
+                        <div class="in4"><a href="#">Hơi Thở Sống Còn<br></a><a href="">Hành động</a><br><br> <button
+                                class="btn btn-primary btn-sm">Like</button> <button
+                                class="btn btn-primary btn-sm">Share</button></div>
+                        <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <img src="Images/AAAABbkcNCCiyVo3fEWmpFhnyOZ1uH2XIwNgJfR8rjpH_NaeA9ZmFFtiS_uh0L1_PwNwMHuDa8D3GMeNlPWx5PQIklxewDS0mN2E_8U.jpg"
+                            alt="">
+                        <div class="in4"><a href="#">Chí Phèo Ngoại Truyện<br></a><a href="">Hài Hước</a><br><br>
+                            <button class="btn btn-primary btn-sm">Like</button> <button
+                                class="btn btn-primary btn-sm">Share</button>
+                        </div>
+                        <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <img src="Images/AAAABbjR9Z1tVdqAm3OUIFh2eYUAYGNRrLMvF06czXlIAJyGxCRbbPhhZoY_uvIuAfjpGClLVwoS9NNH8LB8pSWvo_exR53Z9UykNTNrxfTTRmzrVDnhYIEAQEMM3PaSxQlBP2Ra.jpg"
+                            alt="">
+                        <div class="in4"><a href="#">Quái vật biển khơi<br>Hành động</a><br><br> <button
+                                class="btn btn-primary btn-sm">Like</button> <button
+                                class="btn btn-primary btn-sm">Share</button></div>
+                        <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <img src="Images/AAAABaOlUgBdaKVV0yibqMfcoi9FHaim_ySYWQygmNKvKLfnvzCarG7DEU-Rav_GK1EgHeqTpmxVeoxZcifGuxYwcx5UVFqBrh9Rqg0.jpg"
+                            alt="">
+                        <div class="in4"><a href="#">Angry Birth 2<br></a><a href="">Hoạt Hình</a><br><br> <button
+                                class="btn btn-primary btn-sm">Like</button> <button
+                                class="btn btn-primary btn-sm">Share</button></div>
+                        <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <img src="Images/AAAABf1g2NMhceHgIFLUx2xXOEyX1UbTibEPpcv0tOHMIiAgIAL6vpZKDaL2NoZHlcY0w0TE1vTwiqo1aPx9Sc0n4SS5xcVfSNbEJGc.jpg"
+                            alt="">
+                        <div class="in4"><a href="#">Miền Đất Hứa<br>Khoa Học Viễn Tưởng</a><br><br> <button
+                                class="btn btn-primary btn-sm">Like</button> <button
+                                class="btn btn-primary btn-sm">Share</button></div>
+                        <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                    </div>
+                </div>
+            </div>
+            <hr style="background-color:aliceblue;">
+            <h2>New Movie</h2><br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lwF9r9jupz0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Angry Birds Toons Compilation | Season 1 All Episodes Mashup</h3>
+                    <p>Hãy sẵn sàng cho tiếng cười, nước mắt, một nhúm kung-fu, một thìa tinh nghịch và rắc thịt xông
+                        khói tự do! Đó là một năm mới trên Đảo Piggy, và cuộc đấu tranh giữa Bird và Pig vẫn diễn ra.
+                        Liệu các nhân vật chính chim của chúng ta có thể tiếp tục ngăn chặn những nỗ lực liên tục của
+                        những con lợn để lấy trứng quý giá của chúng không? Liệu King Pig cuối cùng có thưởng thức món
+                        trứng tráng trong mơ của mình? Và những con lợn minion đó cuối cùng sẽ nghỉ ngơi?</p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>ANGRY BIRDS 2</h3>
+                    <p>Hãy sẵn sàng cho tiếng cười, nước mắt, một nhúm kung-fu, một thìa tinh nghịch và rắc thịt xông
+                        khói tự do! Đó là một năm mới trên Đảo Piggy, và cuộc đấu tranh giữa Bird và Pig vẫn diễn ra.
+                        Liệu các nhân vật chính chim của chúng ta có thể tiếp tục ngăn chặn những nỗ lực liên tục của
+                        những con lợn để lấy trứng quý giá của chúng không? Liệu King Pig cuối cùng có thưởng thức món
+                        trứng tráng trong mơ của mình? Và những con lợn minion đó cuối cùng sẽ nghỉ ngơi?</p>
+                </div>
+                <div class="col-sm-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BsSvi_JxlSM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <hr style="background-color:aliceblue;">
+            <h2>Triending</h2>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="card thcard">
+                        <div class="card-body">
+                            <img src="Images/21ngay_vertical_poster-46c8f15fa800-1677229649494-tKxUdSxi.webp" alt="">
+                            <div class="in4"><a href="#">Sứ mệnh thần chết<br></a><a href="">Hành động</a><br><br>
+                                <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button>
+                            </div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card thcard">
+                        <div class="card-body">
+                            <img src="Images/c__m_c_h_m_m_t-cbfea40b6ddc-1669282660021-46MeyFar.webp" alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card thcard">
+                        <div class="card-body">
+                            <img src="Images/groovin_on_vertical_poster__3_-4ed7c86c54c9-1677228217773-32htgNiJ.webp"
+                                alt="">
+                            <div class="in4"><a href="#">Iruma Tại Ngôi Trường Quỷ<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card thcard">
+                        <div class="card-body">
+                            <img src="Images/m_t___ng_t_nh_y_u_vertical_poster-eb6b2431ace6-1671186403443-UC7RRTgE.webp"
+                                alt="">
+                            <div class="in4"><a href="#">Naruto<br><br></a><a href="">Hành động</a><br><br> <button
+                                    class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card thcard">
+                        <div class="card-body">
+                            <img src="Images/muahamangtenem_08_verticalposter-92b55910958a-1677229612732-0YJOm1bl.webp"
+                                alt="">
+                            <div class="in4"><a href="#">Mushukaru Tensei<br><br></a><a href="">Hành động</a><br><br>
+                                <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button>
+                            </div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card thcard">
+                        <div class="card-body">
+                            <img src="Images/yeuemtucainhindautien_08_verticalposterv2-44da21575147-1670493972733-jwZbDwos.webp"
+                                alt="">
+                            <div class="in4"><a href="#">Hơi Thở Sống Còn<br><br></a><a href="">Hành động</a><br><br>
+                                <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button>
+                            </div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2>Short Movies</h2>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card ngang">
+                        <div class="card-body">
+                            <img src="Images/poster_ngang-27cefe1acaea-1666058412723-AAJJoJbI.webp" alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card ngang">
+                        <div class="card-body">
+                            <img src="Images/poster_ngang-306e38e5dade-1666608038960-DhqTWsPG.webp" alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card ngang">
+                        <div class="card-body">
+                            <img src="Images/poster_ngang-c49bdc1a9f47-1665481611169-OsTEIhnn.webp" alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card ngang">
+                        <div class="card-body">
+                            <img src="Images/poster_ngang-f4822d1fdb15-1665024748802-eubzy33s.webp" alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2>Anime</h2>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABSLN2ddXtw232ootp5K8Z922dWZ-q8bnpOIRs9iSIDLTZGN4-dQQlLCnIy1XD9_oKNIo60_9p48TAVhv0sxNkIEFw-l8tC-hFkw.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Sứ mệnh thần chết<br></a><a href="">Hành động</a><br><br>
+                                <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button>
+                            </div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABT4xw4oky9mP52q8oZwRBMdJi6zppMdXcxKsSTdfS5S0fr-AK1LiY8NJxXWnhBDsDL5ePjZfxgAmP5FB72v8JOlGVckoY3Jf1ok.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABTWX6jp3t6cLgxcNOysaPfl574xJEDEbK-uI4--4qKl5p5KDLqRxQ3QAHup9FpYyB99x9bWCHDzRvtnE5QvNvsSJBdX10Ki43sw.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Iruma Tại Ngôi Trường Quỷ<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABZeLFrsxCPGI1T6YYbviEV14MpXaxWhcMGKqJXm42G2nvO4brnpufVp1DyUr_3nUQJH7E9UFlzYd9uR0TuxBbYBST-2K3Kjirvg.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Naruto<br><br></a><a href="">Hành động</a><br><br> <button
+                                    class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABZ-Z3FoP-ZYCVCGQ53DfxGTJpOtYFgr3_1O6uTdFv3QJVD-3W9BrQ-tQXzMYQb8yaC9tXruAP_s_ey474XQXigMz80K_rqwA5lU.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Mushukaru Tensei<br><br></a><a href="">Hành động</a><br><br>
+                                <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button>
+                            </div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABYPY6-i7ctvkCNby6oFZ55gXPQf9fRBVprcuUFZ2tKAO6YEOOTlksJH6LFAxAQem2-4THdoo-9h2WmS9CpAQqdb8lM1l44HNjJk.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Hơi Thở Sống Còn<br><br></a><a href="">Hành động</a><br><br>
+                                <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button>
+                            </div>
+                            <div class="content"><button class="btn btn-dark btn-sm">Play</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2>I Like It</h2>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABYPun7MjLoH7dT5ko9Vyixis8oV0qxtMxBsUfNztYZyHUJMIBb-x4xDJHO29MR4I1TbUfX7MMj8UQpVpRN5SB0_zfHA7vW9eOn2NUVS508RCLU_eYCFBJlzs-z_3molK0UZa.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABV7xire3IkCUOyJ6TZK-in2T8bB7fqXJ6Lve1ICgpzQINgdKa5H7ra_rPN1tenXayPszTbd77AeZV1JQwdJf9vv4UeCwymex5bml4rijwsPN0WdMT5cqUqo0fs7V7wmIpLVT.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABTVOo_BJkLeXJzWHABFPn_zQVRXH8eQc7WyApMFecQn6Nv74Vv1K32BW7sFt8Lu_EswHKsbMXlXt8RrP_EmSMA72mkV9hrryXr4.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABVl_TLpP5XKPzgO3yHsaL12UPo7nVnq4-9ojJNy-J3uaZUbcc5HKrDYBfI05U36_cKkp-tTlUNro8ofEKJR92ZXOljHrtaLiBzT98X-9bKyreHjoP3V2-nh6Cg7qhKVts52fukXJo0Twpl2VLiIvGgvY9x7snpxyW08.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABStlRjNKhkUlCUVfuMzcGDLnKQVgGqLvL5XVAnrX5Ag1U3JsM6mnJWbfNcTI93jLl_sn7_j41qVjkFzVLtPEyT-1HJuL7TCKkaE.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/AAAABfWA5GGk6gPWenlcF_tX0xLWy2XSFL2NzWe7XyteHV4mGr0tcwXAN-N4FnUZF_BDPIjWRY0wpoqH8JBWVdYcLVrRSykMoB6UaC09AefSWVJuV5k5_5xpINQpNceoRFLDbMrh.jpg"
+                                alt="">
+                            <div class="in4"><a href="#">Bất Thường Tại Trường Phép Thuật<br><br></a><a href="">Hành
+                                    động</a><br><br> <button class="btn btn-primary btn-sm">Like</button> <button
+                                    class="btn btn-primary btn-sm">Share</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    </div>
+    <hr>
+    <div class="morenike justify-content-center" style="margin: 20px;">
+        <div class="row">
+
+            <div class="col-sm-4">
+                <img src="Image/men.jpg" alt="">
+                <button class="btn-hd" style="margin-left: 5%;">Men</button>
+            </div>
+            <div class="col-sm-4">
+                <img src="Image/women.webp" alt="">
+                <button class="btn-hd" style="margin-left: 5%;">Women</button>
+            </div>
+            <div class="col-sm-4">
+                <img src="Image/kid.jpg" alt="">
+                <button class="btn-hd" style="margin-left: 5%;">Kid</button>
+            </div>
+        </div>
+    </div>
+    <div class="chuchay">
+        <marquee><i>Email: nikestore@gmail.com - Hotline: 090 909 0909 - phuthienlevo</i></marquee>
+    </div>
+    <footer>
+
+        <div class="card  text-center">
+            <div class="row">
+                <div class="card-body col-sm-6">
+                    <h6 class="card-title footer-help"><i>LIÊN HỆ:</i></h6>
+                    <p class="card-text footer-help"><i>Email: nikestore@gmail.com</i></p>
+                    <i class="footer-help">Hotline: 090 909 0909</i>
+                </div>
+                <div class="card-body col-sm-6">
+                    <a class="footer-help" href="">
+                        <h5>GET HELP</h5>
+                    </a>
+                    <a class="footer-help" href="">
+                        <p>Order Status</p>
+                    </a>
+                    <a class="footer-help" href="">
+                        <p>Delivery</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card-footer footer-help">
+                By phuthienlevo
+            </div>
+        </div>
+    </footer>
+    <script src="Product.js"></script>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function ($scope, $http) {
+            $scope.choose = ['Sắp xếp theo giá', 'Sắp xếp theo tên']
+
+            $scope.begin = 0
+            $scope.amout = 6
+            $scope.titleMore = 'Show More'
+            $scope.products = list;
+            //     $http.get("Product.js").then(function (response) {
+            //         $scope.products = response.data;
+            //     }, function (response) {
+            // alert('loi')
+            // });
+            $scope.more = function () {
+                $scope.amout += 3
+                if ($scope.amout >= $scope.products.length) {
+                    $scope.titleMore = 'No More'
+                }
+
+            }
+            $scope.find = 'i'
+            $scope.s = ''
+            $scope.search = function () {
+                $scope.find = $scope.s
+            }
+            $scope.jordan = function () {
+                $scope.find = 'Jordan'
+                $scope.amout = 12
+            }
+            $scope.nike = function () {
+                $scope.find = 'Nike'
+                $scope.amout = 12
+            }
+
+            $scope.sx = ''
+            $scope.sort = function () {
+                if ($scope.chose == $scope.choose[0]) {
+
+                    $scope.sx = 'price'
+                }
+                if ($scope.chose == $scope.choose[1]) {
+
+                    $scope.sx = 'name'
+                }
+            }
+        });
+
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
